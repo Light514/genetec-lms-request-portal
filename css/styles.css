@@ -437,6 +437,14 @@ body {
   background: var(--gen-color-datavisualization-green);
   box-shadow: 0 0 0 3px #45b44518;
 }
+.subitem-indicator--fix {
+  background: var(--gen-color-datavisualization-orange);
+  box-shadow: 0 0 0 3px #ff770018;
+}
+.subitem-indicator--lang {
+  background: var(--gen-color-accent-solid);
+  box-shadow: 0 0 0 3px #00aeef18;
+}
 
 .subitem-body {
   flex: 1;

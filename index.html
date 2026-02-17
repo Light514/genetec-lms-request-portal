@@ -109,9 +109,9 @@
       </div>
     </div>
 
-    <!-- Card 3: Update Content -->
-    <div class="card">
-      <a class="card-link" data-form="updateContent" href="#" target="_blank" rel="noopener">
+    <!-- Card 3: Update Content (expandable) -->
+    <div class="card card--expandable" id="updateCard">
+      <div class="card-header">
         <div class="card-icon card-icon--update">
           <!-- Gelato: update -->
           <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -120,13 +120,40 @@
         </div>
         <div class="card-body">
           <div class="card-title">Update Content</div>
-          <div class="card-desc">Request minor fixes or changes to existing courses and exams</div>
+          <div class="card-desc">Fix existing content or add a new language</div>
         </div>
-        <!-- Gelato: angle-right -->
-        <svg class="card-arrow" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8.7072 17.0208C8.31668 17.4114 8.31668 18.0445 8.7072 18.435C9.09772 18.8256 9.73089 18.8256 10.1214 18.435L15.0712 13.4853C15.8522 12.7042 15.8522 11.4379 15.0712 10.6569L10.1214 5.70712C9.73089 5.3166 9.09772 5.3166 8.7072 5.70712C8.31668 6.09765 8.31668 6.73081 8.7072 7.12134L12.9498 11.364C13.3404 11.7545 13.3404 12.3877 12.9498 12.7782L8.7072 17.0208Z"/>
+        <!-- Gelato: angle-down -->
+        <svg class="card-chevron" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.12129 8.70711C6.73077 8.31658 6.0976 8.31658 5.70708 8.70711C5.31655 9.09763 5.31655 9.7308 5.70708 10.1213L10.6568 15.0711C11.4379 15.8521 12.7042 15.8521 13.4853 15.0711L18.435 10.1213C18.8255 9.7308 18.8255 9.09763 18.435 8.70711C18.0445 8.31658 17.4113 8.31658 17.0208 8.70711L12.7781 12.9497C12.3876 13.3403 11.7545 13.3403 11.3639 12.9497L7.12129 8.70711Z"/>
         </svg>
-      </a>
+      </div>
+      <div class="card-expand-area">
+        <div class="card-divider"></div>
+        <div class="card-subitems">
+          <a class="subitem" data-form="fixContent" href="#" target="_blank" rel="noopener">
+            <div class="subitem-indicator subitem-indicator--fix"></div>
+            <div class="subitem-body">
+              <div class="subitem-title">Fix Content</div>
+              <div class="subitem-desc">Typos, broken links, missing subtitles, screenshots, or quiz answers</div>
+            </div>
+            <!-- Gelato: angle-right -->
+            <svg class="subitem-arrow" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.7072 17.0208C8.31668 17.4114 8.31668 18.0445 8.7072 18.435C9.09772 18.8256 9.73089 18.8256 10.1214 18.435L15.0712 13.4853C15.8522 12.7042 15.8522 11.4379 15.0712 10.6569L10.1214 5.70712C9.73089 5.3166 9.09772 5.3166 8.7072 5.70712C8.31668 6.09765 8.31668 6.73081 8.7072 7.12134L12.9498 11.364C13.3404 11.7545 13.3404 12.3877 12.9498 12.7782L8.7072 17.0208Z"/>
+            </svg>
+          </a>
+          <a class="subitem" data-form="addLanguage" href="#" target="_blank" rel="noopener">
+            <div class="subitem-indicator subitem-indicator--lang"></div>
+            <div class="subitem-body">
+              <div class="subitem-title">Add Language</div>
+              <div class="subitem-desc">Add a new language version to an existing course</div>
+            </div>
+            <!-- Gelato: angle-right -->
+            <svg class="subitem-arrow" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.7072 17.0208C8.31668 17.4114 8.31668 18.0445 8.7072 18.435C9.09772 18.8256 9.73089 18.8256 10.1214 18.435L15.0712 13.4853C15.8522 12.7042 15.8522 11.4379 15.0712 10.6569L10.1214 5.70712C9.73089 5.3166 9.09772 5.3166 8.7072 5.70712C8.31668 6.09765 8.31668 6.73081 8.7072 7.12134L12.9498 11.364C13.3404 11.7545 13.3404 12.3877 12.9498 12.7782L8.7072 17.0208Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
 
   </div>

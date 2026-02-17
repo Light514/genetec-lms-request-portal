@@ -8,7 +8,8 @@ const FORM_URLS = {
   publishILT:       'https://forms.office.com/r/LNmei15wLf',
   publishELearning: 'https://forms.office.com/r/qeTJ2Sdq9F',
   publishExam:      'https://forms.office.com/r/X7DqDwYwHh',
-  updateContent:    'https://forms.office.com/r/ujUuKdZrT5',
+  fixContent:       'https://forms.office.com/r/ujUuKdZrT5',
+  addLanguage:      'https://forms.office.com/r/HdxmPUfypQ',
 };
 
 // ── Initialization ─────────────────────────────────────────
@@ -28,6 +29,16 @@ document.addEventListener('DOMContentLoaded', () => {
   if (publishHeader) {
     publishHeader.addEventListener('click', () => {
       publishCard.classList.toggle('is-open');
+    });
+  }
+
+  // Expandable card toggle for Update Content
+  const updateCard = document.getElementById('updateCard');
+  const updateHeader = updateCard?.querySelector('.card-header');
+
+  if (updateHeader) {
+    updateHeader.addEventListener('click', () => {
+      updateCard.classList.toggle('is-open');
     });
   }
 
