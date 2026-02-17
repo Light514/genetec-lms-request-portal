@@ -30,4 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
       publishCard.classList.toggle('is-open');
     });
   }
+
+  // FAQ accordion toggles
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.closest('.faq-item').classList.toggle('is-open');
+    });
+  });
 });
